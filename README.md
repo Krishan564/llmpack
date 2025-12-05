@@ -129,6 +129,3 @@ Contributions are welcome\!
 ## 📄 License
 
 MIT License. See [LICENSE](https://www.google.com/search?q=LICENSE) for details.
-
-```
-```

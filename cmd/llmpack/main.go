@@ -43,6 +43,7 @@ func main() {
 	rootCmd.Flags().BoolVar(&cfg.CountTokens, "tokens", true, "Count tokens")
 	rootCmd.Flags().BoolVar(&cfg.NoTree, "no-tree", false, "Disable file tree in output header")
 	rootCmd.Flags().BoolVarP(&cfg.CopyToClipboard, "clipboard", "c", false, "Copy output to clipboard")
+	rootCmd.Flags().BoolVarP(&cfg.SkeletonMode, "skeleton", "s", false, "Strip function bodies (skeleton mode)")
 
 	if err := rootCmd.Execute(); err != nil {
 		os.Exit(1)

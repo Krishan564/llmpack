@@ -11,6 +11,7 @@ import (
 	"github.com/atotto/clipboard"
 	"github.com/dehimik/llmpack/internal/core"
 	"github.com/dehimik/llmpack/internal/formatter"
+	"github.com/dehimik/llmpack/internal/skeleton"
 	"github.com/dehimik/llmpack/internal/tokenizer"
 	"github.com/dehimik/llmpack/internal/walker"
 )
@@ -166,6 +167,19 @@ func Run(cfg core.Config) error {
 
 		if isBinary(content) {
 			continue
+		}
+
+		if cfg.SkeletonMode {
+			reduced, err := skeleton.Process(path, content)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Warning: failed to skeletonize %s: %v\n", path, err)
+			} else {
+				content = reduced
+			}
+		}
+
+		if cfg.CountTokens {
+			totalTokens += tk.Count(string(content))
 		}
 
 		display := displayPaths[i]

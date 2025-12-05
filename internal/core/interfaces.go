@@ -33,4 +33,5 @@ type Config struct {
 	CountTokens     bool
 	CopyToClipboard bool
 	NoTree          bool
+	SkeletonMode    bool
 }

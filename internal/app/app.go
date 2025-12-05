@@ -47,7 +47,7 @@ func Run(cfg core.Config) error {
 	}
 
 	// Setup Walker
-	wk, err := walker.New(cfg.InputPaths)
+	wk, err := walker.New(cfg.InputPaths, cfg.IgnorePatterns)
 	if err != nil {
 		return fmt.Errorf("failed to init walker: %w", err)
 	}

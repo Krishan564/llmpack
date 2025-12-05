@@ -34,4 +34,5 @@ type Config struct {
 	CopyToClipboard bool
 	NoTree          bool
 	SkeletonMode    bool
+	IgnorePatterns  []string
 }

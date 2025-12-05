@@ -11,6 +11,7 @@ import (
 	"github.com/atotto/clipboard"
 	"github.com/dehimik/llmpack/internal/core"
 	"github.com/dehimik/llmpack/internal/formatter"
+	"github.com/dehimik/llmpack/internal/security"
 	"github.com/dehimik/llmpack/internal/skeleton"
 	"github.com/dehimik/llmpack/internal/tokenizer"
 	"github.com/dehimik/llmpack/internal/walker"
@@ -35,6 +36,7 @@ func isBinary(content []byte) bool {
 func Run(cfg core.Config) error {
 	// Setup Formatter
 	var fmtStrategy core.Formatter
+	secScanner := security.New(cfg.DisableSecurity)
 	switch cfg.Format {
 	case "zip":
 		fmtStrategy = formatter.NewZip()
@@ -166,6 +168,11 @@ func Run(cfg core.Config) error {
 		}
 
 		if isBinary(content) {
+			continue
+		}
+
+		if err := secScanner.Scan(path, content); err != nil {
+			fmt.Fprintf(os.Stderr, "SECURITY WARNING: Skipping %s -> %v\n", path, err)
 			continue
 		}
 

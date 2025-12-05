@@ -35,4 +35,5 @@ type Config struct {
 	NoTree          bool
 	SkeletonMode    bool
 	IgnorePatterns  []string
+	DisableSecurity bool
 }

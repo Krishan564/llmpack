@@ -11,6 +11,7 @@ import (
 	"github.com/atotto/clipboard"
 	"github.com/dehimik/llmpack/internal/core"
 	"github.com/dehimik/llmpack/internal/formatter"
+	"github.com/dehimik/llmpack/internal/pricing"
 	"github.com/dehimik/llmpack/internal/security"
 	"github.com/dehimik/llmpack/internal/skeleton"
 	"github.com/dehimik/llmpack/internal/tokenizer"
@@ -249,7 +250,8 @@ func Run(cfg core.Config) error {
 	// stats
 	fmt.Fprintf(os.Stderr, "\nDone! Processed: %d/%d files.\n", filesProcessed, len(files))
 	if cfg.CountTokens {
-		fmt.Fprintf(os.Stderr, "Total Tokens: ~%d\n", totalTokens)
+		costStr := pricing.Estimate(totalTokens, cfg.ModelName)
+		fmt.Fprintf(os.Stderr, "Total Tokens: ~%d (%s for %s)\n", totalTokens, costStr, cfg.ModelName)
 	}
 
 	if cfg.OutputPath != "" && cfg.OutputPath != "-" {

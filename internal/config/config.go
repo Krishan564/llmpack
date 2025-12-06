@@ -20,6 +20,7 @@ type Settings struct {
 	SkeletonMode bool   `yaml:"skeleton"`
 	NoTree       bool   `yaml:"no_tree"`
 	Tokens       bool   `yaml:"tokens"`
+	ModelName    string `yaml:"model_name"`
 }
 
 type FileConfig struct {

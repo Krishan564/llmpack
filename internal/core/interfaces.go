@@ -36,4 +36,5 @@ type Config struct {
 	SkeletonMode    bool
 	IgnorePatterns  []string
 	DisableSecurity bool
+	ModelName       string
 }

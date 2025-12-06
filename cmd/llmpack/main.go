@@ -60,6 +60,10 @@ var rootCmd = &cobra.Command{
 			cfg.CountTokens = settings.Tokens
 		}
 
+		if !cmd.Flags().Changed("model") {
+			cfg.ModelName = settings.ModelName
+		}
+
 		if !cmd.Flags().Changed("skeleton") {
 			cfg.SkeletonMode = settings.SkeletonMode
 		}
@@ -94,6 +98,7 @@ func main() {
 
 	rootCmd.Flags().BoolVar(&cfg.IgnoreGit, "ignore-git", true, "Use .gitignore")
 	rootCmd.Flags().BoolVar(&cfg.CountTokens, "tokens", true, "Count tokens")
+	rootCmd.Flags().StringVarP(&cfg.ModelName, "model", "m", "gpt-4o", "Model for cost estimation (gpt-4o, claude-3-5-sonnet, etc.)")
 
 	rootCmd.Flags().BoolVar(&cfg.NoTree, "no-tree", false, "Disable file tree in output header")
 	rootCmd.Flags().BoolVarP(&cfg.CopyToClipboard, "clipboard", "c", false, "Copy output to clipboard")

@@ -12,7 +12,7 @@ func reduceGo(content []byte) ([]byte, error) {
 	fset := token.NewFileSet()
 	node, err := parser.ParseFile(fset, "", content, parser.ParseComments)
 	if err != nil {
-		return nil, err // Або повернути content, якщо хочеш soft fail
+		return nil, err
 	}
 
 	ast.Inspect(node, func(n ast.Node) bool {

